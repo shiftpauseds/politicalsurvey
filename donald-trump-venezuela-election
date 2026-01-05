@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Public Opinion – January 5, 2026</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f5f6f7;
+      color: #222;
+      max-width: 840px;
+      margin: 50px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 3px solid #c62828;
+      padding-bottom: 15px;
+      background-color: #ffffff;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-family: "Merriweather", serif;
+      font-size: 32px;
+      color: #0a1d45;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 15px;
+      color: #666;
+      margin: 5px 0 0 0;
+    }
+
+    main {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      font-family: "Merriweather", serif;
+      font-size: 26px;
+      color: #111;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .metadata {
+      color: #555;
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+
+    .poll-container {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-bottom: 50px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 720px;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .related-poll-button {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .related-poll-button a {
+      background: linear-gradient(90deg, #1a4ea0, #2469ce);
+      color: #fff;
+      padding: 16px 36px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+    }
+
+    .related-poll-button a:hover {
+      background: linear-gradient(90deg, #163e7c, #1d58b0);
+      transform: translateY(-2px);
+    }
+
+    .note {
+      font-size: 14px;
+      color: #777;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      padding: 25px 10px;
+      border-top: 4px solid #c62828;
+      font-size: 13px;
+      color: #555;
+      background-color: #ffffff;
+      box-shadow: 0 -1px 5px rgba(0,0,0,0.03);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Daily Public Opinion</h1>
+    <p>Independent Political Insights – Updated Daily</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Do you support or oppose the U.S. running Venezuela's upcoming election?</h2>
+      <p class="metadata">
+        <strong>Fieldwork:</strong> January 3 – 5, 2026<br>
+        <strong>Sample:</strong> Ongoing live online poll
+      </p>
+    </section>
+
+    <section class="poll-container">
+      <div class="strawpoll-embed" id="strawpoll_xVg71DwRGyr">
+        <iframe 
+          title="StrawPoll Embed" 
+          src="https://strawpoll.com/embed/xVg71DwRGyr" 
+          allowfullscreen allowtransparency>
+        </iframe>
+      </div>
+      <script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script>
+    </section>
+
+    <section class="related-poll-button">
+      <a href="https://www.effectivegatecpm.com/gtq02txbvf?key=da442bb11a865f1c297f6494461ae26f" target="_blank">
+        🗳️ Vote: Was Trump's decision to capture Maduro right or wrong?
+      </a>
+      <p class="note">Opens in a new tab — return here to see live results update.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Note:</strong> This is an informal public opinion poll. Results update in real-time and reflect visitor views only. © 2026 Daily Public Opinion
+  </footer>
+
+</body>
+</html>
