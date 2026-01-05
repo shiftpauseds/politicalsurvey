@@ -52,10 +52,63 @@
       line-height: 1.4;
     }
 
+    h3 {
+      font-family: "Merriweather", serif;
+      font-size: 22px;
+      color: #0a1d45;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
     .metadata {
       color: #555;
       font-size: 15px;
       margin-bottom: 30px;
+    }
+
+    .background-section {
+      background-color: #f8f9fa;
+      border-left: 4px solid #1a4ea0;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .background-section p {
+      margin-bottom: 15px;
+    }
+
+    .key-figure {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .key-figure img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+      border: 2px solid #e0e0e0;
+    }
+
+    .key-figure-content h4 {
+      margin: 0 0 5px 0;
+      color: #0a1d45;
+      font-size: 18px;
+    }
+
+    .key-figure-content p {
+      margin: 0;
+      font-size: 14.5px;
+      color: #555;
     }
 
     .poll-container {
@@ -74,31 +127,104 @@
       border-radius: 6px;
     }
 
-    .related-poll-button {
-      text-align: center;
+    /* Clean minimal poll card */
+    .clean-poll-card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 25px;
       margin-top: 40px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      transition: box-shadow 0.2s ease;
     }
 
-    .related-poll-button a {
-      background: linear-gradient(90deg, #1a4ea0, #2469ce);
-      color: #fff;
-      padding: 16px 36px;
+    .clean-poll-card:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .clean-poll-card h3 {
+      color: #0a1d45;
+      border: none;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .poll-question {
       font-size: 18px;
-      font-weight: bold;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    .poll-description {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .vote-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #1a4ea0;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: 600;
       text-decoration: none;
       border-radius: 6px;
-      transition: background 0.3s ease, transform 0.2s ease;
-      display: inline-block;
+      transition: all 0.2s ease;
+      border: none;
+      cursor: pointer;
     }
 
-    .related-poll-button a:hover {
-      background: linear-gradient(90deg, #163e7c, #1d58b0);
+    .vote-button:hover {
+      background-color: #163e7c;
       transform: translateY(-2px);
     }
 
-    .note {
+    .vote-button::after {
+      content: "→";
+      margin-left: 8px;
+      font-weight: bold;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 25px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
       font-size: 14px;
       color: #777;
+    }
+
+    .live-indicator {
+      display: flex;
+      align-items: center;
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #4CAF50;
+      border-radius: 50%;
+      margin-right: 6px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    .note {
+      font-size: 13px;
+      color: #888;
       margin-top: 10px;
     }
 
@@ -111,6 +237,29 @@
       color: #555;
       background-color: #ffffff;
       box-shadow: 0 -1px 5px rgba(0,0,0,0.03);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        margin: 20px auto;
+      }
+      
+      .key-figure {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .key-figure img {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      
+      .card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
     }
   </style>
 </head>
@@ -130,6 +279,29 @@
       </p>
     </section>
 
+    <section class="background-section">
+      <h3>Background: The U.S.-Venezuela Crisis</h3>
+      <p>The political situation in Venezuela has reached a critical juncture following the controversial U.S. intervention in 2025. After years of economic sanctions and diplomatic pressure, the Trump administration authorized a military operation resulting in the capture of President Nicolás Maduro.</p>
+      
+      <div class="key-figure">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Nicol%C3%A1s_Maduro_2019.jpg/800px-Nicol%C3%A1s_Maduro_2019.jpg" alt="Nicolás Maduro">
+        <div class="key-figure-content">
+          <h4>Nicolás Maduro</h4>
+          <p>President of Venezuela from 2013 until his capture in 2025. Leader of the United Socialist Party of Venezuela, successor to Hugo Chávez. His presidency was marked by economic crisis, political repression, and disputed elections. Currently detained by U.S. authorities awaiting trial for alleged crimes against humanity and drug trafficking charges.</p>
+        </div>
+      </div>
+      
+      <div class="key-figure">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/800px-Donald_Trump_official_portrait.jpg" alt="Donald Trump">
+        <div class="key-figure-content">
+          <h4>Donald Trump</h4>
+          <p>47th President of the United States (2017-2021) and 45th President (2025-present). Authorized "Operation Democratic Restoration" in Venezuela in 2025, arguing the need to restore democracy and prevent a humanitarian catastrophe. The operation has divided international opinion, with allies supporting it as necessary intervention and critics condemning it as a violation of sovereignty.</p>
+        </div>
+      </div>
+      
+      <p>The upcoming Venezuelan election, scheduled for March 2026, will be administered by a joint U.S.-Venezuelan transitional authority. Critics argue this represents a return to "gunboat diplomacy," while supporters claim it's necessary to ensure free and fair elections after decades of authoritarian rule.</p>
+    </section>
+
     <section class="poll-container">
       <div class="strawpoll-embed" id="strawpoll_xVg71DwRGyr">
         <iframe 
@@ -141,16 +313,34 @@
       <script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script>
     </section>
 
-    <section class="related-poll-button">
-      <a href="https://www.effectivegatecpm.com/gtq02txbvf?key=da442bb11a865f1c297f6494461ae26f" target="_blank">
-        🗳️ Vote: Was Trump's decision to capture Maduro right or wrong?
+    <!-- Clean minimal poll card -->
+    <section class="clean-poll-card">
+      <h3>Related Poll</h3>
+      <div class="poll-question">Was Trump's decision to capture Maduro right or wrong?</div>
+      <div class="poll-description">
+        Share your view on the controversial 2025 operation that led to the capture of Venezuelan President Nicolás Maduro.
+      </div>
+      
+      <a href="https://www.effectivegatecpm.com/gtq02txbvf?key=da442bb11a865f1c297f6494461ae26f" target="_blank" class="vote-button">
+        Vote Now
       </a>
+      
+      <div class="card-footer">
+        <div class="live-indicator">
+          <span class="live-dot"></span>
+          <span>Live results updating</span>
+        </div>
+        <div class="poll-meta">
+          <span>New poll • Takes 30 seconds</span>
+        </div>
+      </div>
+      
       <p class="note">Opens in a new tab — return here to see live results update.</p>
     </section>
   </main>
 
   <footer>
-    <strong>Note:</strong> This is an informal public opinion poll. Results update in real-time and reflect visitor views only. © 2026 Daily Public Opinion
+    <strong>Note:</strong> This is an informal public opinion poll. Results update in real-time and reflect visitor views only. Image sources: Wikimedia Commons (public domain). © 2026 Daily Public Opinion
   </footer>
 
 </body>
